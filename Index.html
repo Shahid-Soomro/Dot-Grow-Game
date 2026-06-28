@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dot Grow Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Top Bar -->
+
+    <div class="top-bar">
+
+        <button id="pauseBtn">⏸</button>
+
+        <div class="title">
+
+            <h1>DOT GROW</h1>
+        </div>
+
+        <button id="soundBtn">🔊</button>
+
+    </div>
+
+
+    <!-- Score Area -->
+
+    <div class="score-board">
+
+        <div>
+
+            <span>🏆 Best</span>
+
+            <h2 id="bestScore">0</h2>
+
+        </div>
+
+        <div>
+
+            <span>Score</span>
+
+            <h2 id="score">0</h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- Game Area -->
+
+    <div class="game-wrapper">
+
+        <canvas id="gameCanvas"
+                width="700"
+                height="500"></canvas>
+
+    </div>
+
+
+    <!-- Game Over -->
+
+    <div class="game-over hide" id="gameOver">
+
+        <h1>GAME OVER</h1>
+
+        <h2 id="finalScore">0</h2>
+
+        <button id="restartBtn">
+
+            PLAY AGAIN
+
+        </button>
+
+    </div>
+
+
+    <!-- Instructions -->
+
+    <div class="info">
+
+        <p>
+
+            ↑ ↓ ← → Arrow Keys to Move
+
+        </p>
+
+        <p>
+
+            Eat Yellow Dots and Grow Bigger
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
