@@ -1,0 +1,249 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#1e1e1e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    touch-action:none;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+    width:1000px;
+    background:#000000;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 0 30px rgba(0,255,255,.15);
+}
+
+/* ===========================
+   TOP BAR
+=========================== */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.top-bar h1{
+    color:#47c9ff;
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+.top-bar button{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:12px;
+    background:#000000;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.top-bar button:hover{
+    background:#47c9ff;
+    color:#000;
+}
+
+/* ===========================
+   SCORE
+=========================== */
+
+.score-board{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.score-board div{
+    width:48%;
+    background:#000000;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.score-board span{
+    color:#9bb5d1;
+}
+
+.score-board h2{
+    color:#ffe14d;
+    font-size:34px;
+    margin-top:8px;
+}
+
+/* ===========================
+   GAME AREA
+=========================== */
+
+.game-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+canvas{
+    background:#800000;
+    border:2px solid #000000;
+    border-radius:15px;
+    box-shadow:none;
+    touch-action;none
+    display;block;
+}
+
+/* ===========================
+   GAME OVER
+=========================== */
+
+.game-over{
+    width:320px;
+    background:#000000;
+    margin:25px auto;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.game-over h1{
+    color:#ff6666;
+    margin-bottom:15px;
+}
+
+.game-over h2{
+    color:#47c9ff;
+    margin-bottom:20px;
+}
+
+.game-over button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#ffe14d;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.game-over button:hover{
+    transform:scale(1.05);
+}
+
+.hide{
+    display:none;
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.info{
+    margin-top:20px;
+    background:#000000;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+}
+
+.info p{
+    color:#d7e3ef;
+    margin:6px 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.container{
+    width:95%;
+}
+
+canvas{
+    width:100%;
+    height:auto;
+}
+
+.score-board{
+    flex-direction:column;
+    gap:15px;
+}
+
+.score-board div{
+    width:100%;
+}
+
+}
+@media (max-width:768px){
+
+.top-bar h1{
+    font-size:28px;
+}
+
+.top-bar button{
+    width:50px;
+    height:50px;
+    font-size:24px;
+}
+
+.score-board h2{
+    font-size:28px;
+}
+
+canvas{
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+}
+/* ===== Mobile Responsive Header ===== */
+@media (max-width: 600px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    .game-title {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .score,
+    .best-score {
+        font-size: 16px;
+    }
+}
