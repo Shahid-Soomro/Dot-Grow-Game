@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#05070F">
+
+    <meta name="description" content="Dot Hunter Game built with HTML, CSS and JavaScript">
+
+    <title>Dot Hunter Game</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1 class="title">
+            DOT HUNTER
+        </h1>
+
+        <div class="score-board">
+
+            <div class="box">
+                <span>Score</span>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="box">
+                <span>High Score</span>
+                <h2 id="highScore">0</h2>
+            </div>
+
+        </div>
+
+        <!-- GAME CANVAS -->
+        <canvas
+            id="gameCanvas"
+            width="600"
+            height="600"
+            tabindex="0"
+            aria-label="Dot Hunter Game Canvas">
+
+            Your browser does not support HTML5 Canvas.
+
+        </canvas>
+
+        <!-- RESTART BUTTON -->
+        <button
+            id="restartBtn"
+            type="button">
+
+            Restart Game
+
+        </button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- GAME OVER POPUP -->
+    <!-- ========================= -->
+
+    <div id="gameOverBox">
+
+        <div class="game-over-card">
+
+            <h2>GAME OVER</h2>
+
+            <p>
+                Score :
+                <span id="finalScore">0</span>
+            </p>
+
+            <button id="playAgainBtn">
+                Restart Game
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
